@@ -1,4 +1,43 @@
-.buttons {
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.calculator {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: blue;
+    padding: 35px;
+    border-radius: 25px;
+}
+
+.display-bar {
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+    height: 50px;
+}
+
+.functions {
     display: grid;
-    
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    gap: 15px;
+}
+
+.buttons {
+    background-color: rgba(255, 229, 180, .9);
+    border: none;
+    border-radius: 50%;
+}
+
+.buttons:hover {
+    background-color: rgba(255, 229, 180, .8);
+}
+
+.buttons:active {
+    background-color: rgba(255, 229, 180, 1);
 }
