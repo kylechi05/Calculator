@@ -1,6 +1,14 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+html {
+    display: relative;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(200deg, rgb(240,128,128), rgb(255,218,185)) 
 }
 
 .calculator {
@@ -8,17 +16,21 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background: blue;
+    background-image: linear-gradient(rgb(62, 62, 62), rgb(32, 32, 32));
     padding: 35px;
     border-radius: 25px;
+    
 }
 
 .display-bar {
-    background: white;
-    border-radius: 15px;
-    padding: 15px;
-    margin-bottom: 20px;
-    height: 50px;
+    max-width: 245px;
+    margin: 20px 0;
+    height: 95px;
+    color: white;
+    text-align: end;
+    font-size: 24px;
+    overflow: hidden;
+    overflow-wrap: break-word;
 }
 
 .functions {
@@ -29,15 +41,45 @@
 }
 
 .buttons {
-    background-color: rgba(255, 229, 180, .9);
+    background-color: rgba(59, 59, 59, 0.8);
+    color: white;
     border: none;
-    border-radius: 50%;
+    border-radius: 25%;
+    font-size: 150%;
+    
 }
 
 .buttons:hover {
-    background-color: rgba(255, 229, 180, .8);
+    background-color: rgba(59, 59, 59, 1);
 }
 
 .buttons:active {
-    background-color: rgba(255, 229, 180, 1);
+    background-color: rgba(59, 59, 59, 1);
+    outline: 1px solid grey;
+}
+
+.symbols {
+    background-color: rgba(247, 154, 114, 0.95);
+}
+
+.symbols:hover {
+    background-color: rgba(247, 154, 114, 1);
+}
+
+.symbols:active {
+    background-color: rgba(247, 154, 114, 1);
+    outline: 1px solid grey;
+}
+
+.equals {
+    background-color: rgba(244, 123, 99, 0.95);
+}
+
+.equals:hover {
+    background-color: rgba(244, 123, 99, 1);
+}
+
+.equals:active {
+    background-color: rgba(244, 123, 99, 1);
+    outline: 1px solid grey;
 }
